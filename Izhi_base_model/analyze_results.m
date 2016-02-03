@@ -1,0 +1,11 @@
+fname = 'times.bin';
+disp(fname);
+fid = fopen(fname,'rb');
+times = fread(fid,'double');
+fclose(fid);
+fname = 'voltage.bin';
+disp(fname);
+fid = fopen(fname,'rb');
+voltage = fread(fid,'double');
+fclose(fid);
+plot(times,voltage);
